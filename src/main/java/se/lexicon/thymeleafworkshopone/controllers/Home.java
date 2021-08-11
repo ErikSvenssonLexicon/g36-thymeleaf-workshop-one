@@ -25,6 +25,11 @@ public class Home {
         return "contact";
     }
 
+    @GetMapping("/about")
+    public String about(){
+        return "about";
+    }
+
     @PostMapping("/contact/add")
     public String process(@RequestParam(name = "string") String input){
         strings.add(input);
